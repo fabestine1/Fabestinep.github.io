@@ -1,0 +1,323 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  /*font:15px/1.5 Arial, Helvetica, sans-serif;*/
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*here we are making all the ul to have 0 margin by defualt*/
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button_1{
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+
+.dark{
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header{
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+/* we can remove the header and make all ul have 0 margin by defualt*/
+
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 15px 0 15px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+/*I want "Fabestine" in the branding and "Home" to have
+organge color, so I will wrape them with span element
+and create a class "highlight" and "current" for them respectively*/
+
+header .highlight, header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
+
+/*I will also create a hover state for the menu so that when
+you hover over it will give different color.*/
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+
+
+/*
+since I am in the css I have to use "../ in other to go to
+image folder to get our background image. */
+
+#showcaseacting{
+  min-height: 400px;
+  background: url("../img/slider-image-1.jpg") no-repeat 0 -200px;
+  text-align: center;
+  color: red;
+}
+
+
+#showcaseacting h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcaseacting p{
+  font-size: 20px;
+}
+
+#showcasewebdesign{
+  min-height: 400px;
+  background: url("../img/web-design-header.jpg") no-repeat 0 ;
+  text-align: center;
+  color: red;
+}
+
+
+#showcasewebdesign h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcasewebdesign p{
+  font-size: 20px;
+}
+
+#showcasecatering{
+  min-height: 400px;
+  background: url("../img/dishes.jpg") no-repeat 0;
+  text-align: center;
+  color: blue;
+}
+
+
+#showcasecatering h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcasecatering p{
+  font-size: 20px;
+}
+
+#showcasehair{
+  min-height: 400px;
+  background: url("../img/bighair.jpg") no-repeat 0 -400px;
+  text-align: center;
+  color: red;
+}
+
+
+#showcasehair h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcasehair p{
+  font-size: 20px;
+}
+
+#showcasewoodwork{
+  min-height: 400px;
+  background: url("../img/Woodwork-Pine-Table-Sutton-College-23.jpg") no-repeat 0 ;
+  text-align: center;
+  color: red;
+}
+
+
+#showcasewoodwork h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcasewoodwork p{
+  font-size: 20px;
+}
+
+#showcaseorganizer{
+  min-height: 400px;
+  background: url("../img/Diversity.png") no-repeat 0;
+  text-align: center;
+  color: red;
+}
+
+
+#showcaseorganizer h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcaseorganizer p{
+  font-size: 20px;
+}
+
+
+#newsletter{
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+
+#newsletter h1{
+  float: left;
+}
+
+#newsletter form{
+  float: right;
+  margin-top: 15px;
+}
+
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width: 150px;
+}
+
+/*sidebar*/
+
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 90%;
+  padding: 5px;
+}
+
+
+/*main-col*/
+
+article#main-col{
+  float:left;
+  width: 65%
+}
+
+
+/*Services*/
+
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+/*To make the website look good on a moble device we have to use this */
+/*Media Queries*/
+/* code that is here, until the first @media block, will apply to any screen size */
+
+@media screen and (max-width: 240px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 10%;
+
+  }
+
+  header{
+    padding: 20px;
+  }
+
+  #newsletter button, .quote button{
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  body{
+    width: 40px;
+}
